@@ -1,0 +1,264 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    line-height: normal;
+    background-color: #73bbdf;
+}
+
+header {
+    background-color: #fff;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;   
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.logo {
+    height: 4cm; /* Ajustar la altura a 4 cm */
+    width: auto; /* Mantener la proporción de la imagen */
+    margin: 0;
+}
+.botellas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 7cm;
+    width: 20cm;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Cambiado a flex para mejor alineación */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-family: 'Fredoka', sans-serif;
+    color: #73bbdf;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+section {
+    padding: 200px 20px 20px; /* Ajustar el padding superior para el encabezado fijo */
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+    overflow: hidden;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    color: #206a40;
+    margin-bottom: 1rem;
+    font-size: 2rem; /* Tamaño de fuente adecuado */
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Fredoka', sans-serif;
+    color: #73bbdf;
+    font-size: 24px;
+    background-color: #206a40;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* Estilo para la sección Productos */
+
+.productos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre los cuadros */
+
+}
+.productos-item {
+    background-color: #206a40; /* Color del marco */
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: calc(33.333% - 20px); /* Tres cuadros por línea */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.productos-item h3 {
+    font-family: 'Amatic SC', cursive; /* Fuente 'Amatic SC' */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff; /* Color del texto del título */
+}
+
+.productos-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    
+   
+}
+
+.productos-item p {
+    font-size: 1rem;
+    color: #fff; /* Color del texto del párrafo */
+}
+
+footer {
+    background-color: #206a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Espaciado superior e inferior */
+    width: 100%;
+}
+
+#contacto {
+    padding: 2rem;
+    background-color: #73bbdf;
+}
+
+
+footer .contacto {
+    padding: 60px 0;
+ 
+}
+
+footer .contacto .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #73bbdf;
+    text-align: center;
+}
+
+footer .contacto .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"],
+footer .contacto .formulario textarea {
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+    width: calc(49% - 10px); /* Ancho simplificado con margen */
+    margin-bottom: 15px;
+}
+
+footer .contacto .formulario textarea {
+    width: 100%;
+    height: 100px;
+    max-height: 300px;
+}
+
+footer .contacto .formulario input[type="text"]:hover,
+footer .contacto .formulario input[type="email"]:hover,
+footer .contacto .formulario textarea:hover {
+    border: 2px solid #73bbdf;
+}
+
+footer .contacto .formulario .boton {
+    background: #206a40;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 40px;
+    cursor: pointer;
+    margin: 20px auto; /* Centrando el botón */
+    display: inline-block; /* Para mantener el ancho del botón */
+}
+
+footer .contacto .formulario .boton:hover {
+    background: #73bbdf; /* Cambio de color al pasar el cursor */
+}
+
+/* Footer - Redes Sociales */
+footer .redes-sociales {
+    background:#206a40;
+    padding: 0%;
+}
+
+footer .redes-sociales .contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes-sociales a {
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+footer .redes-sociales a:hover {
+    background: #206a40;
+}
+
+
+/*   MEDIA QUERIES   */
+
+@media screen and (max-width: 500px) {
+    header .contenedor-texto .texto .nombre {
+        font-size: 35px;
+    }
+
+    header .contenedor-texto .texto .profesion {
+        font-size: 18px;
+    }
+
+    footer .redes-sociales .contenedor {
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+
+    footer .contacto .formulario input[type="text"],
+    footer .contacto .formulario input[type="email"] {
+        width: 100%; /* Campos de formulario a ancho completo */
+    }
+
+    .productos-item {
+        flex: 1 1 100%; /* Un producto por fila en pantallas pequeñas */
+        @media (max-width: 768px) {
+            .productos-item {
+                width: calc(50% - 10px);
+                /* Dos cuadros por línea en pantallas medianas */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .productos-item {
+                width: 100%;
+                /* Un cuadro por línea en pantallas pequeñas */
+            }
+        }
+    }
+}
